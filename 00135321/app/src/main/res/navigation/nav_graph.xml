@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+    <fragment
+        android:id="@+id/actorList"
+        android:name="com.example.diferido.ui.actores.actorlist.ActorList"
+        android:label="fragment_actor_list"
+        tools:layout="@layout/fragment_actor_list" >
+        <action
+            android:id="@+id/action_actorList_to_newActor"
+            app:destination="@id/newActor" />
+        <action
+            android:id="@+id/action_actorList_to_actorInformation"
+            app:destination="@id/actorInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/newActor"
+        android:name="com.example.diferido.ui.actores.newactor.NewActor"
+        android:label="fragment_new_actor"
+        tools:layout="@layout/fragment_new_actor" />
+    <fragment
+        android:id="@+id/actorInformation"
+        android:name="com.example.diferido.ui.actores.actorinformation.ActorInformation"
+        android:label="fragment_actor_information"
+        tools:layout="@layout/fragment_actor_information" />
+</navigation>
