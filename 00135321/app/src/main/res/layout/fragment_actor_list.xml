@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/acction_add_actor"
+        android:id="@+id/action_add_actor"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginEnd="20dp"
