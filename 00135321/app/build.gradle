@@ -7,6 +7,10 @@ android {
     namespace 'com.example.diferido'
     compileSdk 33
 
+    dataBinding {
+        enabled true
+    }
+
     defaultConfig {
         applicationId "com.example.diferido"
         minSdk 24
